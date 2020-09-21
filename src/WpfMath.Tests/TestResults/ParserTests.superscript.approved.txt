@@ -1,0 +1,106 @@
+{
+  "TextStyle": null,
+  "RootAtom": {
+    "PreviousAtom": null,
+    "Elements": [
+      {
+        "Atom": {
+          "BaseAtom": {
+            "Type": "Ordinary",
+            "Source": {
+              "Start": 1,
+              "End": 2,
+              "Length": 1,
+              "Source": "{^n}C_r",
+              "SourceName": "User input"
+            }
+          },
+          "SubscriptAtom": null,
+          "SuperscriptAtom": {
+            "Character": "n",
+            "TextStyle": null,
+            "IsTextSymbol": false,
+            "Type": "Ordinary",
+            "Source": {
+              "Start": 2,
+              "End": 3,
+              "Length": 1,
+              "Source": "{^n}C_r",
+              "SourceName": "User input"
+            }
+          },
+          "Type": "Ordinary",
+          "Source": {
+            "Start": 0,
+            "End": 2,
+            "Length": 2,
+            "Source": "{^n}C_r",
+            "SourceName": "User input"
+          }
+        },
+        "LeftType": "Ordinary",
+        "RightType": "Ordinary",
+        "Type": "Ordinary",
+        "Source": {
+          "Start": 0,
+          "End": 2,
+          "Length": 2,
+          "Source": "{^n}C_r",
+          "SourceName": "User input"
+        }
+      },
+      {
+        "BaseAtom": {
+          "Character": "C",
+          "TextStyle": null,
+          "IsTextSymbol": false,
+          "Type": "Ordinary",
+          "Source": {
+            "Start": 4,
+            "End": 5,
+            "Length": 1,
+            "Source": "{^n}C_r",
+            "SourceName": "User input"
+          }
+        },
+        "SubscriptAtom": {
+          "Character": "r",
+          "TextStyle": null,
+          "IsTextSymbol": false,
+          "Type": "Ordinary",
+          "Source": {
+            "Start": 6,
+            "End": 7,
+            "Length": 1,
+            "Source": "{^n}C_r",
+            "SourceName": "User input"
+          }
+        },
+        "SuperscriptAtom": null,
+        "Type": "Ordinary",
+        "Source": {
+          "Start": 5,
+          "End": 7,
+          "Length": 2,
+          "Source": "{^n}C_r",
+          "SourceName": "User input"
+        }
+      }
+    ],
+    "Type": "Ordinary",
+    "Source": {
+      "Start": 0,
+      "End": 7,
+      "Length": 7,
+      "Source": "{^n}C_r",
+      "SourceName": "User input"
+    }
+  },
+  "Source": {
+    "Start": 0,
+    "End": 7,
+    "Length": 7,
+    "Source": "{^n}C_r",
+    "SourceName": "User input"
+  }
+}

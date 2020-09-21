@@ -185,7 +185,210 @@
     </MethodInvocation>
     <Return name="f" />
   </Formula>
+  
+  <Formula name="vdots" enabled="true">
+    <CreateFormula name="f">
+      <Argument type="string" value="\cdotp" />
+    </CreateFormula>
+    <MethodInvocation name="PutOver" formula="f">
+      <Argument type="string" value="\cdotp" />
+      <Argument type="Unit" value="Mu" />
+      <Argument type="double" value="0" />
+      <Argument type="bool" value="false" />
+    </MethodInvocation>
+    <MethodInvocation name="PutUnder" formula="f">
+      <Argument type="string" value="\cdotp" />
+      <Argument type="Unit" value="Mu" />
+      <Argument type="double" value="0" />
+      <Argument type="bool" value="false" />
+    </MethodInvocation>
+    <Return name="f" />
+  </Formula>
 
+  <Formula name="dots" enabled="true">
+    <CreateFormula name="f">
+      <Argument type="string" value="\cdots" />
+    </CreateFormula>
+    <Return name="f" />
+  </Formula>
+
+  <Formula name="notin" enabled="true">
+    <CreateFormula name="f">
+      <Argument type="string" value="\not\in" />
+    </CreateFormula>
+    <Return name="f" />
+  </Formula>
+
+  <Formula name="nexists" enabled="true">
+    <CreateFormula name="f">
+      <Argument type="string" value="\not" />
+    </CreateFormula>
+    <MethodInvocation name="AddStrut" formula="f">
+      <Argument type="Unit" value="Mu" />
+      <Argument type="double" value="-1.8" />
+      <Argument type="double" value="0" />
+      <Argument type="double" value="0" />
+    </MethodInvocation>
+    <CreateFormula name="g">
+      <Argument type="string" value="\exists" />
+    </CreateFormula>
+    <MethodInvocation name="Add" formula="f">
+      <Argument type="Formula" value="g" />
+    </MethodInvocation>
+    <Return name="f" />
+  </Formula>
+
+  <Formula name="nsubseteq" enabled="true">
+    <CreateFormula name="f">
+      <Argument type="string" value="\not" />
+    </CreateFormula>
+    <MethodInvocation name="AddStrut" formula="f">
+      <Argument type="Unit" value="Mu" />
+      <Argument type="double" value="-1.8" />
+      <Argument type="double" value="0" />
+      <Argument type="double" value="0" />
+    </MethodInvocation>
+    <CreateFormula name="g">
+      <Argument type="string" value="\subseteq" />
+    </CreateFormula>
+    <MethodInvocation name="Add" formula="f">
+      <Argument type="Formula" value="g" />
+    </MethodInvocation>
+    <Return name="f" />
+  </Formula>
+
+  <Formula name="rightleftarrows" enabled="true">
+    <CreateFormula name="f">
+      <Argument type="string" value="_{\leftarrow}^{\rightarrow}" />
+    </CreateFormula>
+    <Return name="f" />
+  </Formula>
+
+  <Formula name="implies" enabled="true">
+    <CreateFormula name="f">
+      <Argument type="string" value="\Rightarrow" />
+    </CreateFormula>
+    <Return name="f" />
+  </Formula>
+  
+  <Formula name="idotsint" enabled="true">
+    <CreateFormula name="f1">
+      <Argument type="string" value="\int" />
+    </CreateFormula>
+    <CreateFormula name="f2">
+      <Argument type="string" value="\cdotp" />
+    </CreateFormula>
+    <MethodInvocation name="AddStrut" formula="f2">
+      <Argument type="Unit" value="Mu" />
+      <Argument type="double" value="-6" />
+      <Argument type="double" value="0" />
+      <Argument type="double" value="0" />
+    </MethodInvocation>
+    <CreateFormula name="f3">
+      <Argument type="string" value="\cdotp" />
+    </CreateFormula>
+    <MethodInvocation name="AddStrut" formula="f3">
+      <Argument type="Unit" value="Mu" />
+      <Argument type="double" value="-6" />
+      <Argument type="double" value="0" />
+      <Argument type="double" value="0" />
+    </MethodInvocation>
+    <CreateFormula name="f4">
+      <Argument type="string" value="\cdotp" />
+    </CreateFormula>
+    <MethodInvocation name="AddStrut" formula="f4">
+      <Argument type="Unit" value="Mu" />
+      <Argument type="double" value="-6" />
+      <Argument type="double" value="0" />
+      <Argument type="double" value="0" />
+    </MethodInvocation>
+    <CreateFormula name="f5">
+      <Argument type="string" value="\int" />
+    </CreateFormula>
+    <MethodInvocation name="AddStrut" formula="f5">
+      <Argument type="Unit" value="Mu" />
+      <Argument type="double" value="-6" />
+      <Argument type="double" value="0" />
+      <Argument type="double" value="0" />
+    </MethodInvocation>
+    <MethodInvocation name="Add" formula="f1">
+      <Argument type="Formula" value="f2" />
+    </MethodInvocation>
+    <MethodInvocation name="Add" formula="f1">
+      <Argument type="Formula" value="f3" />
+    </MethodInvocation>
+    <MethodInvocation name="Add" formula="f1">
+      <Argument type="Formula" value="f4" />
+    </MethodInvocation>
+    <MethodInvocation name="Add" formula="f1">
+      <Argument type="Formula" value="f5" />
+    </MethodInvocation>
+    <Return name="f1" />
+  </Formula>
+
+  
+  <Formula name="iint" enabled="true">
+    <CreateFormula name="f">
+      <Argument type="string" value="\int" />
+    </CreateFormula>
+    <MethodInvocation name="AddStrut" formula="f">
+      <Argument type="Unit" value="Mu" />
+      <Argument type="double" value="-12" />
+      <Argument type="double" value="0" />
+      <Argument type="double" value="0" />
+    </MethodInvocation>
+    <CreateFormula name="g">
+      <Argument type="string" value="\int" />
+    </CreateFormula>
+    <MethodInvocation name="AddStrut" formula="g">
+      <Argument type="Unit" value="Mu" />
+      <Argument type="double" value="0" />
+      <Argument type="double" value="0" />
+      <Argument type="double" value="0" />
+    </MethodInvocation>
+    <MethodInvocation name="Add" formula="f">
+      <Argument type="Formula" value="g" />
+    </MethodInvocation>
+    <Return name="f" />
+  </Formula>
+
+  <Formula name="iiint" enabled="true">
+    <CreateFormula name="f">
+      <Argument type="string" value="\int" />
+    </CreateFormula>
+    <MethodInvocation name="AddStrut" formula="f">
+      <Argument type="Unit" value="Mu" />
+      <Argument type="double" value="-12" />
+      <Argument type="double" value="0" />
+      <Argument type="double" value="0" />
+    </MethodInvocation>
+    <CreateFormula name="g">
+      <Argument type="string" value="\int" />
+    </CreateFormula>
+    <MethodInvocation name="AddStrut" formula="g">
+      <Argument type="Unit" value="Mu" />
+      <Argument type="double" value="-12" />
+      <Argument type="double" value="0" />
+      <Argument type="double" value="0" />
+    </MethodInvocation>
+    <CreateFormula name="h">
+      <Argument type="string" value="\int" />
+    </CreateFormula>
+    <MethodInvocation name="AddStrut" formula="h">
+      <Argument type="Unit" value="Mu" />
+      <Argument type="double" value="-12" />
+      <Argument type="double" value="0" />
+      <Argument type="double" value="0" />
+    </MethodInvocation>
+    <MethodInvocation name="Add" formula="g">
+      <Argument type="Formula" value="h" />
+    </MethodInvocation>
+    <MethodInvocation name="Add" formula="f">
+      <Argument type="Formula" value="g" />
+    </MethodInvocation>
+    <Return name="f" />
+  </Formula>
+  
   <Formula name="bowtie" enabled="true">
     <CreateFormula name="f">
       <Argument type="string" value="\triangleright" />

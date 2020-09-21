@@ -263,10 +263,15 @@ namespace WpfMath
                 }
                 else if (ch == superScriptChar || ch == subScriptChar || ch == primeChar)
                 {
-                    if (position == 0)
-                        throw new TexParseException("Every script needs a base: \""
-                            + superScriptChar + "\", \"" + subScriptChar + "\" and \""
-                            + primeChar + "\" can't be the first character!");
+                    if(position == 0)
+                    {
+                        var sp = new SpaceAtom(source);
+                        var scriptsAtom = AttachScripts(formula, value, ref position, sp, skipWhiteSpace, environment);
+                        formula.Add(scriptsAtom, value.Segment(initialPosition, position - initialPosition));
+                        //throw new TexParseException("Every script needs a base: \""
+                        //    + superScriptChar + "\", \"" + subScriptChar + "\" and \""
+                        //    + primeChar + "\" can't be the first character!");
+                    }
                     else
                         throw new TexParseException("Double scripts found! Try using more braces.");
                 }

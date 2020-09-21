@@ -301,3 +301,13 @@ let newLineAfterMatrix(text: string): unit =
     verifyParseResultScenario
     <| processSpecialChars text
     <| text
+
+[<Fact>]
+let superscript() =
+    verifyParseResult @"{^n}C_r"
+
+[<Fact>]
+let vdots() =
+    verifyParseResult @"\vdots"
+
+

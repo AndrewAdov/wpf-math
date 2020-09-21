@@ -1,0 +1,83 @@
+{
+  "TextStyle": null,
+  "RootAtom": {
+    "BaseAtom": {
+      "BaseAtom": {
+        "IsDelimeter": false,
+        "Name": "cdotp",
+        "IsTextSymbol": false,
+        "Type": "Punctuation",
+        "Source": {
+          "Start": 1,
+          "End": 6,
+          "Length": 5,
+          "Source": "\\cdotp",
+          "SourceName": "User input"
+        }
+      },
+      "UnderAtom": null,
+      "OverAtom": {
+        "IsDelimeter": false,
+        "Name": "cdotp",
+        "IsTextSymbol": false,
+        "Type": "Punctuation",
+        "Source": {
+          "Start": 1,
+          "End": 6,
+          "Length": 5,
+          "Source": "\\cdotp",
+          "SourceName": "Predefined formula fragment"
+        }
+      },
+      "UnderSpace": 0.0,
+      "OverSpace": 0.0,
+      "UnderSpaceUnit": "Em",
+      "OverSpaceUnit": "Mu",
+      "UnderScriptSmaller": false,
+      "OverScriptSmaller": false,
+      "Type": "Ordinary",
+      "Source": {
+        "Start": 0,
+        "End": 6,
+        "Length": 6,
+        "Source": "\\vdots",
+        "SourceName": "User input"
+      }
+    },
+    "UnderAtom": {
+      "IsDelimeter": false,
+      "Name": "cdotp",
+      "IsTextSymbol": false,
+      "Type": "Punctuation",
+      "Source": {
+        "Start": 1,
+        "End": 6,
+        "Length": 5,
+        "Source": "\\cdotp",
+        "SourceName": "Predefined formula fragment"
+      }
+    },
+    "OverAtom": null,
+    "UnderSpace": 0.0,
+    "OverSpace": 0.0,
+    "UnderSpaceUnit": "Mu",
+    "OverSpaceUnit": "Em",
+    "UnderScriptSmaller": false,
+    "OverScriptSmaller": false,
+    "Type": "Ordinary",
+    "Source": {
+      "Start": 0,
+      "End": 6,
+      "Length": 6,
+      "Source": "\\vdots",
+      "SourceName": "User input"
+    }
+  },
+  "Source": {
+    "Start": 0,
+    "End": 6,
+    "Length": 6,
+    "Source": "\\vdots",
+    "SourceName": "User input"
+  }
+}

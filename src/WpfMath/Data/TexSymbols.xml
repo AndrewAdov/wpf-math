@@ -287,4 +287,5 @@
   <Symbol name="leftharpoondown" type="rel"/>
   <Symbol name="rightharpoonup" type="rel"/>
   <Symbol name="rightharpoondown" type="rel"/>
+  <Symbol name="iff" type="rel"/>
 </TeXSymbols>

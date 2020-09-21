@@ -336,6 +336,7 @@ for a text style is not defined (e.g. "numbers" and "small" in "mathcal") -->
     <SymbolMapping name="leftharpoondown" ch="41" fontId="0"/>
     <SymbolMapping name="rightharpoonup" ch="42" fontId="0"/>
     <SymbolMapping name="rightharpoondown" ch="43" fontId="0"/>
+    <SymbolMapping name="iff" ch="44" fontId="3"/>
 
   </SymbolMappings>
 
@@ -1480,7 +1481,7 @@ for a text style is not defined (e.g. "numbers" and "small" in "mathcal") -->
       <Char code="38" width="1.000003" height="0.694445" depth="0.194443" />
       <Char code="39" width="0.777781" height="0.463748" depth="-0.036252" />
       <Char code="40" width="1.000003" height="0.366875" depth="-0.133125" />
-      <Char code="41" width="1.000003" height="0.366875" depth="-0.133125" />
+      <Char code="41" width="1.000003" height="0.694445" depth="-0.133125" />
       <Char code="42" width="0.611113" height="0.694445" depth="0.194443" >
         <NextLarger fontId="2" code="126"/>
       </Char>
